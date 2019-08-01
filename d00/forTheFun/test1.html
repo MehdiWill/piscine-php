@@ -1,0 +1,86 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test1</title>
+    <style>
+        @media all and (max-width: 800px) {
+    body{
+        display: inline-flex;
+        align-items: center;
+    	flex-direction: column;
+    	padding: 100px;
+    }
+        }
+    p{
+        white-space: pre-line;
+        font-size: 110%;
+        text-transform: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        order: inherit;
+        align-self:flex-start;
+        justify-content: center;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    .recherche_p { 
+        width: 200px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin: 20px;
+        font-size: 25px;
+        position: absolute;
+        top: 2px;
+        right: 4px;
+        
+    }
+
+    #searchthis #search {
+        display: flex;
+        justify-content: left;
+        font-family: Lato;  
+        font-size: 12px;
+        font-weight: normal;   
+        letter-spacing: 1px;
+        width: 98.5%;
+        box-sizing: border-box; 
+    }
+
+    a{
+        position: absolute;
+        top: 10px;
+        left: 40px;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <p>Faut bien commencer quelque part.
+    </p>
+
+
+    <div class="recherche_p">
+
+     <form action="/search" id="searchthis" method="get">
+     <input id="search" name="q" type="text" placeholder="Rechercher" />
+     <input id="search-btn" type="submit" value="Rechercher" />
+     </form>
+        
+     </div>
+    <img src="http://www.quickmeme.com/img/cc/ccdda6e179bceb94b74078556a2d8ea11f541f9c5e9dd70d3c75b460b573d897.jpg">
+   <h3><a href="#explication">ici</a></h3>
+    <h3 id="explication">Tout commença en 1986...</h3>
+   </div>
+
+   
+</body>

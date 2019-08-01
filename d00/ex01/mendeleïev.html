@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>
+   tableau Mendeleiev
+</title>
+
+<style>
+body{
+ 
+}
+
+table{ 
+    empty-cells: hide
+
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+th{
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+
+}
+
+td{
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 5px;
+      margin: 1px;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative;
+      color: white;
+    }
+
+.container{
+    
+}
+
+.non-metal{ 
+    background: linear-gradient(90deg, rgb(100, 96, 153), rgb(187, 187, 187));
+}
+
+.noble-gas{
+      background: linear-gradient(90deg, rgba(48, 62, 143, 1), rgba(47, 150, 163, 1));    }
+
+
+.number{
+    bottom: 0;
+    left: 5px;
+}
+
+.weight{
+    top: 0;
+    right: 5px;
+}
+
+span{
+      font-size: 16px;
+      font-weight: 100;
+      position: absolute;
+      color: blue;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="container" >
+
+   
+<table>
+      <tr>
+        <td class="non-metal">H <span class="number">1</span> <span class="weight">1</span></td>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <td class="noble-gas">He <span class="number">2</span> <span class="weight">4</span></td>
+      </tr>
+
+
+</table>      
+</div>
+</body>
+</html>
